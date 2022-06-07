@@ -13,7 +13,7 @@ async function populateFields(searchTerm) {
     cityHeader.innerHTML = city.name;
 
     const tempHeader = document.querySelector('.temperature');
-    tempHeader.innerHTML = convertTemp(city.main.temp);
+    tempHeader.innerHTML = `${convertTemp(city.main.temp)}\u00B0c`;
 
     const descriptionHeader = document.querySelector('.description');
     descriptionHeader.innerHTML = city.weather[0].description;
